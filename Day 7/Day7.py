@@ -11,7 +11,6 @@ rules=[]
 rules_v2=[]
 
 for line in data:
-    n_line=line.replace('\n','')
     rules.append(line.replace('\n','')) 
     
     x=line.replace('\n','').split(" ")
@@ -33,7 +32,7 @@ while len(check_colours)>0:
     allowed_colours.extend(new_colours)
     check_colours=new_colours
 
-#print(len(allowed_colours))
+print(len(allowed_colours))
     
 c_ind = {x.split(' ')[0]+' '+x.split(' ')[1]:i for i, x in enumerate(rules)}
 
